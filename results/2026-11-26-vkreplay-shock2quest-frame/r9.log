@@ -1,0 +1,44 @@
+log: game:\vkreplay.log
+log: named after \Device\Harddisk0\Partition1\Games\Shock2\vkreplay.xex
+log: also over UDP to 192.168.1.53:7371
+vkreplay: shock2quest's dumped frame, drawn again
+PASS: vkreplay: draws.bin read
+display: 1280x720 scaled to the 1920x1080 output
+display: the line counter reached 720 after 17571 us
+display: Xbox 360 video output, 1280x720 at 59940 mHz
+vkreplay: frame 1280x720, formats 44/129, 1 samples
+PASS: vkreplay: draws.bin parsed
+vkreplay: 58 draws, 2 clears
+PASS: vkreplay: buffers, textures and sets made
+vkreplay: phase "draws=1-1 shader=flat"
+vkreplay: "draws=1-1 shader=flat": frame 0 took 1744 us
+vkreplay: "draws=1-1 shader=flat": frame 1 took 1999 us
+vkreplay: "draws=1-1 shader=flat": frame 2 took 1999 us
+vkreplay: "draws=1-1 shader=flat": frame 3 took 1999 us
+vkreplay: "draws=1-1 shader=flat": frame 4 took 1963 us
+vkreplay: "draws=1-1 shader=flat": 60 frames, 1992 us a frame
+vkreplay: "draws=1-1 shader=flat": 120 frames, 1999 us a frame
+vkreplay: "draws=1-1 shader=flat": 180 frames, 2000 us a frame
+PASS: draws=1-1 shader=flat
+vkreplay: phase "draws=1-1 shader=tex"
+vkreplay: "draws=1-1 shader=tex": frame 0 took 2000 us
+vkreplay: "draws=1-1 shader=tex": frame 1 took 1999 us
+vkreplay: "draws=1-1 shader=tex": frame 2 took 2001 us
+vkreplay: "draws=1-1 shader=tex": frame 3 took 2000 us
+vkreplay: "draws=1-1 shader=tex": frame 4 took 1999 us
+vkreplay: "draws=1-1 shader=tex": 60 frames, 2000 us a frame
+vkreplay: "draws=1-1 shader=tex": 120 frames, 2000 us a frame
+vkreplay: "draws=1-1 shader=tex": 180 frames, 2000 us a frame
+PASS: draws=1-1 shader=tex
+vkreplay: phase "draws=1-1 shader=noloop"
+vkreplay: "draws=1-1 shader=noloop": frame 0 took 1999 us
+vkreplay: "draws=1-1 shader=noloop": frame 1 took 2000 us
+vkreplay: "draws=1-1 shader=noloop": frame 2 took 1999 us
+vkreplay: "draws=1-1 shader=noloop": frame 3 took 1999 us
+vkreplay: "draws=1-1 shader=noloop": frame 4 took 2001 us
+vkreplay: "draws=1-1 shader=noloop": 60 frames, 2000 us a frame
+vkreplay: "draws=1-1 shader=noloop": 120 frames, 2000 us a frame
+vkreplay: "draws=1-1 shader=noloop": 180 frames, 2000 us a frame
+PASS: draws=1-1 shader=noloop
+vkreplay: every phase ran
+exit: status 0

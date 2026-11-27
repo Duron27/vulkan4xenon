@@ -1,0 +1,75 @@
+log: game:\vkreplay.log
+log: named after \Device\Harddisk0\Partition1\Games\Shock2\vkreplay.xex
+log: also over UDP to 192.168.1.53:7371
+vkreplay: shock2quest's dumped frame, drawn again
+PASS: vkreplay: draws.bin read
+display: 1280x720 scaled to the 1920x1080 output
+display: the line counter reached 720 after 23654 us
+display: Xbox 360 video output, 1280x720 at 59940 mHz
+vkreplay: frame 1280x720, formats 44/129, 1 samples
+PASS: vkreplay: draws.bin parsed
+vkreplay: 58 draws, 2 clears
+PASS: vkreplay: buffers, textures and sets made
+vkreplay: phase "draws=0-0"
+vkreplay: "draws=0-0": frame 0 took 2792 us
+vkreplay: "draws=0-0": frame 1 took 2002 us
+vkreplay: "draws=0-0": frame 2 took 2001 us
+vkreplay: "draws=0-0": frame 3 took 2001 us
+vkreplay: "draws=0-0": frame 4 took 2000 us
+vkreplay: "draws=0-0": 60 frames, 2013 us a frame
+vkreplay: "draws=0-0": 120 frames, 2000 us a frame
+vkreplay: "draws=0-0": 180 frames, 2000 us a frame
+PASS: draws=0-0
+vkreplay: phase "draws=42-42"
+vkreplay: "draws=42-42": frame 0 took 2000 us
+vkreplay: "draws=42-42": frame 1 took 2000 us
+vkreplay: "draws=42-42": frame 2 took 2000 us
+vkreplay: "draws=42-42": frame 3 took 2001 us
+vkreplay: "draws=42-42": frame 4 took 2001 us
+vkreplay: "draws=42-42": 60 frames, 2000 us a frame
+vkreplay: "draws=42-42": 120 frames, 1999 us a frame
+vkreplay: "draws=42-42": 180 frames, 2000 us a frame
+PASS: draws=42-42
+vkreplay: phase "draws=15-15"
+vkreplay: "draws=15-15": frame 0 took 2000 us
+vkreplay: "draws=15-15": frame 1 took 2001 us
+vkreplay: "draws=15-15": frame 2 took 2001 us
+vkreplay: "draws=15-15": frame 3 took 2000 us
+vkreplay: "draws=15-15": frame 4 took 2000 us
+vkreplay: "draws=15-15": 60 frames, 2000 us a frame
+vkreplay: "draws=15-15": 120 frames, 2000 us a frame
+vkreplay: "draws=15-15": 180 frames, 2000 us a frame
+PASS: draws=15-15
+vkreplay: phase "draws=12-12"
+vkreplay: "draws=12-12": frame 0 took 2001 us
+vkreplay: "draws=12-12": frame 1 took 2000 us
+vkreplay: "draws=12-12": frame 2 took 2000 us
+vkreplay: "draws=12-12": frame 3 took 2001 us
+vkreplay: "draws=12-12": frame 4 took 2000 us
+vkreplay: "draws=12-12": 60 frames, 2000 us a frame
+vkreplay: "draws=12-12": 120 frames, 2000 us a frame
+vkreplay: "draws=12-12": 180 frames, 2000 us a frame
+PASS: draws=12-12
+vkreplay: phase "draws=2-2"
+vkreplay: "draws=2-2": frame 0 took 2000 us
+vkreplay: "draws=2-2": frame 1 took 2001 us
+vkreplay: "draws=2-2": frame 2 took 2001 us
+vkreplay: "draws=2-2": frame 3 took 2000 us
+vkreplay: "draws=2-2": frame 4 took 2000 us
+vkreplay: "draws=2-2": 60 frames, 2001 us a frame
+vkreplay: "draws=2-2": 120 frames, 2003 us a frame
+vkreplay: "draws=2-2": 180 frames, 2000 us a frame
+PASS: draws=2-2
+vkreplay: phase "draws=1-1"
+vkreplay: "draws=1-1": frame 0 took 2000 us
+vkreplay: "draws=1-1": frame 1 took 1998 us
+vkreplay: "draws=1-1": frame 2 took 2000 us
+vkreplay: "draws=1-1": frame 3 took 1973 us
+vkreplay: "draws=1-1": frame 4 took 1999 us
+vkWaitForFences returned 2
+vkreplay: the frame didn't finish: RBBM_STATUS E8A54700, ring read 0x130C write 0x130C
+vkreplay: "draws=1-1": 25 frames, 831 us a frame
+FAIL: draws=1-1
+vkreplay: stopped
+gpu: the GPU didn't finish: 0xC00000B5; keeping it and its memory
+exit: status 1

@@ -1,0 +1,34 @@
+log: game:\vkreplay.log
+log: named after \Device\Harddisk0\Partition1\Games\Shock2\vkreplay.xex
+log: also over UDP to 192.168.1.53:7371
+vkreplay: shock2quest's dumped frame, drawn again
+PASS: vkreplay: draws.bin read
+display: 1280x720 scaled to the 1920x1080 output
+display: the line counter reached 720 after 18912 us
+display: Xbox 360 video output, 1280x720 at 59940 mHz
+vkreplay: frame 1280x720, formats 44/129, 1 samples
+PASS: vkreplay: draws.bin parsed
+vkreplay: 58 draws, 2 clears
+PASS: vkreplay: buffers, textures and sets made
+vkreplay: phase "draws=1-1 shader=fullnoloop"
+vkreplay: "draws=1-1 shader=fullnoloop": frame 0 took 1650 us
+vkreplay: "draws=1-1 shader=fullnoloop": frame 1 took 2003 us
+vkreplay: "draws=1-1 shader=fullnoloop": frame 2 took 2000 us
+vkreplay: "draws=1-1 shader=fullnoloop": frame 3 took 2000 us
+vkreplay: "draws=1-1 shader=fullnoloop": frame 4 took 2000 us
+vkreplay: "draws=1-1 shader=fullnoloop": 60 frames, 1994 us a frame
+vkreplay: "draws=1-1 shader=fullnoloop": 120 frames, 2000 us a frame
+vkreplay: "draws=1-1 shader=fullnoloop": 180 frames, 2003 us a frame
+PASS: draws=1-1 shader=fullnoloop
+vkreplay: phase "program=1 shader=fullnoloop"
+vkreplay: "program=1 shader=fullnoloop": frame 0 took 25993 us
+vkreplay: "program=1 shader=fullnoloop": frame 1 took 25993 us
+vkreplay: "program=1 shader=fullnoloop": frame 2 took 25993 us
+vkreplay: "program=1 shader=fullnoloop": frame 3 took 25993 us
+vkreplay: "program=1 shader=fullnoloop": frame 4 took 25993 us
+vkreplay: "program=1 shader=fullnoloop": 60 frames, 25989 us a frame
+vkreplay: "program=1 shader=fullnoloop": 120 frames, 25989 us a frame
+vkreplay: "program=1 shader=fullnoloop": 180 frames, 25992 us a frame
+PASS: program=1 shader=fullnoloop
+vkreplay: every phase ran
+exit: status 0

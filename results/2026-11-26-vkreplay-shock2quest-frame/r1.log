@@ -1,0 +1,21 @@
+log: game:\vkreplay.log
+log: named after \Device\Harddisk0\Partition1\Games\Shock2\vkreplay.xex
+log: also over UDP to 192.168.1.53:7371
+vkreplay: shock2quest's dumped frame, drawn again
+PASS: vkreplay: draws.bin read
+display: 1280x720 scaled to the 1920x1080 output
+display: the line counter reached 720 after 22333 us
+display: Xbox 360 video output, 1280x720 at 59940 mHz
+vkreplay: frame 1280x720, formats 44/129, 1 samples
+PASS: vkreplay: draws.bin parsed
+vkreplay: 58 draws, 2 clears
+PASS: vkreplay: buffers, textures and sets made
+vkreplay: phase "asis"
+vkWaitForFences returned 2
+vkreplay: the frame didn't finish: RBBM_STATUS EEA51110, ring read 0x67C write 0x67C
+vkreplay: "asis": frame 0 took 0 us
+vkreplay: "asis": 0 frames, 0 us a frame
+FAIL: asis
+vkreplay: stopped
+gpu: the GPU didn't finish: 0xC00000B5; keeping it and its memory
+exit: status 1

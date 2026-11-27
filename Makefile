@@ -55,7 +55,19 @@ BENCH_SOURCES := bench/main.c bench/scenes.c bench/assets.c bench/backend_xsdk.c
 	bench/shaders.c bench/probes.c
 BENCH_OBJECTS := $(patsubst bench/%.c,$(BUILD)/bench/%.o,$(BENCH_SOURCES))
 
-.PHONY: all clean
+# vkhang: shock2quest's world draws, a phase at a time, to find what hangs the GPU (hang/main.c). Not in all.
+HANG_SOURCES := hang/main.c hang/shaders.c
+HANG_OBJECTS := $(patsubst hang/%.c,$(BUILD)/hang/%.o,$(HANG_SOURCES)) $(BUILD)/tests/harness.o \
+	$(BUILD)/tests/harness_scene.o
+
+# vkreplay: a frame shock2quest dumped (draws.bin), drawn again with its console shader bundle (hang/replay.c).
+SHOCK2_SHADERS ?= $(BUILD)/replay_shaders/shock2_shaders.c
+REPLAY_OBJECTS := $(BUILD)/hang/replay.o $(BUILD)/hang/shock2_shaders.o $(BUILD)/tests/harness.o \
+	$(BUILD)/tests/harness_scene.o
+
+.PHONY: all clean vkhang vkreplay
+vkhang: $(BUILD)/vkhang.xex
+vkreplay: $(BUILD)/vkreplay.xex
 .SECONDARY:
 all: $(BUILD)/vulkan4xenon_test.xex $(BUILD)/vkbench.xex
 
@@ -70,6 +82,21 @@ $(BUILD)/vkbench.elf: $(BENCH_OBJECTS) $(BUILD)/libvulkan4xenon.a $(XSDK_LIBRARY
 	$(CC) $(LDFLAGS) -Wl,-Map,$(BUILD)/vkbench.map -o $@ $(BENCH_OBJECTS) $(LIBS)
 	$(OBJDUMP) -d $@ | $(PYTHON) $(XSDK)/tools/xenia_scan.py
 
+$(BUILD)/vkhang.elf: $(HANG_OBJECTS) $(BUILD)/libvulkan4xenon.a $(XSDK_LIBRARY)
+	$(CC) $(LDFLAGS) -Wl,-Map,$(BUILD)/vkhang.map -o $@ $(HANG_OBJECTS) $(LIBS)
+	$(OBJDUMP) -d $@ | $(PYTHON) $(XSDK)/tools/xenia_scan.py
+
+$(BUILD)/vkreplay.elf: $(REPLAY_OBJECTS) $(BUILD)/libvulkan4xenon.a $(XSDK_LIBRARY)
+	$(CC) $(LDFLAGS) -Wl,-Map,$(BUILD)/vkreplay.map -o $@ $(REPLAY_OBJECTS) $(LIBS)
+
+$(BUILD)/hang/replay.o: hang/replay.c $(SHOCK2_SHADERS)
+	@mkdir -p $(@D)
+	$(CC) $(CFLAGS) -Itests -I$(dir $(SHOCK2_SHADERS)) -c $< -o $@
+
+$(BUILD)/hang/shock2_shaders.o: $(SHOCK2_SHADERS)
+	@mkdir -p $(@D)
+	$(CC) $(CFLAGS) -c $< -o $@
+
 $(BUILD)/libvulkan4xenon.a: $(LAYER_OBJECTS)
 	rm -f $@
 	$(AR) rcs $@ $^
@@ -81,6 +108,10 @@ $(BUILD)/src/%.o: src/%.c
 $(BUILD)/tests/%.o: tests/%.c
 	@mkdir -p $(@D)
 	$(CC) $(CFLAGS) -c $< -o $@
+
+$(BUILD)/hang/%.o: hang/%.c
+	@mkdir -p $(@D)
+	$(CC) $(CFLAGS) -Itests -c $< -o $@
 
 $(BUILD)/bench/%.o: bench/%.c
 	@mkdir -p $(@D)

@@ -1,0 +1,34 @@
+log: game:\vkreplay.log
+log: named after \Device\Harddisk0\Partition1\Games\Shock2\vkreplay.xex
+log: also over UDP to 192.168.1.53:7371
+vkreplay: shock2quest's dumped frame, drawn again
+PASS: vkreplay: draws.bin read
+display: 1280x720 scaled to the 1920x1080 output
+display: the line counter reached 720 after 23751 us
+display: Xbox 360 video output, 1280x720 at 59940 mHz
+vkreplay: frame 1280x720, formats 44/129, 1 samples
+PASS: vkreplay: draws.bin parsed
+vkreplay: 58 draws, 2 clears
+PASS: vkreplay: buffers, textures and sets made
+vkreplay: phase "draws=1-1 verts=0-87"
+vkreplay: "draws=1-1 verts=0-87": frame 0 took 1568 us
+vkreplay: "draws=1-1 verts=0-87": frame 1 took 2000 us
+vkreplay: "draws=1-1 verts=0-87": frame 2 took 2001 us
+vkreplay: "draws=1-1 verts=0-87": frame 3 took 2000 us
+vkreplay: "draws=1-1 verts=0-87": frame 4 took 2001 us
+vkreplay: "draws=1-1 verts=0-87": 60 frames, 1992 us a frame
+vkreplay: "draws=1-1 verts=0-87": 120 frames, 2000 us a frame
+vkreplay: "draws=1-1 verts=0-87": 180 frames, 2000 us a frame
+PASS: draws=1-1 verts=0-87
+vkreplay: phase "draws=1-1 verts=88-175"
+vkreplay: "draws=1-1 verts=88-175": frame 0 took 2001 us
+vkreplay: "draws=1-1 verts=88-175": frame 1 took 2000 us
+vkreplay: "draws=1-1 verts=88-175": frame 2 took 2001 us
+vkWaitForFences returned 2
+vkreplay: the frame didn't finish: RBBM_STATUS E8A54700, ring read 0x844 write 0x844
+vkreplay: "draws=1-1 verts=88-175": frame 3 took 0 us
+vkreplay: "draws=1-1 verts=88-175": 3 frames, 100 us a frame
+FAIL: draws=1-1 verts=88-175
+vkreplay: stopped
+gpu: the GPU didn't finish: 0xC00000B5; keeping it and its memory
+exit: status 1

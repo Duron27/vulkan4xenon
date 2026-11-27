@@ -1,0 +1,91 @@
+log: game:\vkhang.log
+log: named after \Device\Harddisk0\Partition1\Games\Shock2\vkhang.xex
+log: also over UDP to 192.168.1.53:7371
+vkhang: what in shock2quest's world draws hangs the GPU
+display: 1280x720 scaled to the 1920x1080 output
+display: the line counter reached 720 after 27756 us
+display: Xbox 360 video output, 1280x720 at 59940 mHz
+PASS: vkhang: device, swapchain, textures and buffers made
+vkhang: phase "flat colour, 1 wall"
+vkhang: "flat colour, 1 wall": frame 0 took 1559 us
+vkhang: "flat colour, 1 wall": frame 1 took 2000 us
+vkhang: "flat colour, 1 wall": frame 2 took 1999 us
+vkhang: "flat colour, 1 wall": frame 3 took 2001 us
+vkhang: "flat colour, 1 wall": frame 4 took 1999 us
+vkhang: "flat colour, 1 wall": 60 frames, 1992 us a frame
+vkhang: "flat colour, 1 wall": 120 frames, 2000 us a frame
+PASS: flat colour, 1 wall
+vkhang: phase "the game's world shader, 1 wall"
+vkhang: "the game's world shader, 1 wall": frame 0 took 69979 us
+vkhang: "the game's world shader, 1 wall": frame 1 took 67982 us
+vkhang: "the game's world shader, 1 wall": frame 2 took 69982 us
+vkhang: "the game's world shader, 1 wall": frame 3 took 69979 us
+vkhang: "the game's world shader, 1 wall": frame 4 took 69981 us
+vkhang: "the game's world shader, 1 wall": 60 frames, 69014 us a frame
+vkhang: "the game's world shader, 1 wall": 120 frames, 68747 us a frame
+PASS: the game's world shader, 1 wall
+vkhang: phase "the game's world shader less the spotlight loop, 1 wall"
+vkhang: "the game's world shader less the spotlight loop, 1 wall": frame 0 took 4000 us
+vkhang: "the game's world shader less the spotlight loop, 1 wall": frame 1 took 3999 us
+vkhang: "the game's world shader less the spotlight loop, 1 wall": frame 2 took 4026 us
+vkhang: "the game's world shader less the spotlight loop, 1 wall": frame 3 took 4000 us
+vkhang: "the game's world shader less the spotlight loop, 1 wall": frame 4 took 4000 us
+vkhang: "the game's world shader less the spotlight loop, 1 wall": 60 frames, 4002 us a frame
+vkhang: "the game's world shader less the spotlight loop, 1 wall": 120 frames, 3999 us a frame
+PASS: the game's world shader less the spotlight loop, 1 wall
+vkhang: phase "the game's world shader with one spotlight pass, 1 wall"
+vkhang: "the game's world shader with one spotlight pass, 1 wall": frame 0 took 27992 us
+vkhang: "the game's world shader with one spotlight pass, 1 wall": frame 1 took 27992 us
+vkhang: "the game's world shader with one spotlight pass, 1 wall": frame 2 took 27993 us
+vkhang: "the game's world shader with one spotlight pass, 1 wall": frame 3 took 27992 us
+vkhang: "the game's world shader with one spotlight pass, 1 wall": frame 4 took 27992 us
+vkhang: "the game's world shader with one spotlight pass, 1 wall": 60 frames, 27991 us a frame
+vkhang: "the game's world shader with one spotlight pass, 1 wall": 120 frames, 27986 us a frame
+PASS: the game's world shader with one spotlight pass, 1 wall
+vkhang: phase "the game's world shader with one spotlight pass, no highlight, 1 wall"
+vkhang: "the game's world shader with one spotlight pass, no highlight, 1 wall": frame 0 took 27993 us
+vkhang: "the game's world shader with one spotlight pass, no highlight, 1 wall": frame 1 took 27965 us
+vkhang: "the game's world shader with one spotlight pass, no highlight, 1 wall": frame 2 took 27993 us
+vkhang: "the game's world shader with one spotlight pass, no highlight, 1 wall": frame 3 took 27992 us
+vkhang: "the game's world shader with one spotlight pass, no highlight, 1 wall": frame 4 took 27970 us
+vkhang: "the game's world shader with one spotlight pass, no highlight, 1 wall": 60 frames, 27989 us a frame
+vkhang: "the game's world shader with one spotlight pass, no highlight, 1 wall": 120 frames, 27992 us a frame
+PASS: the game's world shader with one spotlight pass, no highlight, 1 wall
+vkhang: phase "the game's world shader with one spotlight pass, no cone, 1 wall"
+vkhang: "the game's world shader with one spotlight pass, no cone, 1 wall": frame 0 took 23993 us
+vkhang: "the game's world shader with one spotlight pass, no cone, 1 wall": frame 1 took 23992 us
+vkhang: "the game's world shader with one spotlight pass, no cone, 1 wall": frame 2 took 23994 us
+vkhang: "the game's world shader with one spotlight pass, no cone, 1 wall": frame 3 took 23992 us
+vkhang: "the game's world shader with one spotlight pass, no cone, 1 wall": frame 4 took 23993 us
+vkhang: "the game's world shader with one spotlight pass, no cone, 1 wall": 60 frames, 23993 us a frame
+vkhang: "the game's world shader with one spotlight pass, no cone, 1 wall": 120 frames, 23992 us a frame
+PASS: the game's world shader with one spotlight pass, no cone, 1 wall
+vkhang: phase "the game's world shader with one spotlight pass, no cos in the cone, 1 wall"
+vkhang: "the game's world shader with one spotlight pass, no cos in the cone, 1 wall": frame 0 took 28019 us
+vkhang: "the game's world shader with one spotlight pass, no cos in the cone, 1 wall": frame 1 took 27991 us
+vkhang: "the game's world shader with one spotlight pass, no cos in the cone, 1 wall": frame 2 took 27994 us
+vkhang: "the game's world shader with one spotlight pass, no cos in the cone, 1 wall": frame 3 took 28014 us
+vkhang: "the game's world shader with one spotlight pass, no cos in the cone, 1 wall": frame 4 took 27993 us
+vkhang: "the game's world shader with one spotlight pass, no cos in the cone, 1 wall": 60 frames, 27993 us a frame
+vkhang: "the game's world shader with one spotlight pass, no cos in the cone, 1 wall": 120 frames, 27992 us a frame
+PASS: the game's world shader with one spotlight pass, no cos in the cone, 1 wall
+vkhang: phase "the game's world shader with one spotlight pass, a plain distance falloff, 1 wall"
+vkhang: "the game's world shader with one spotlight pass, a plain distance falloff, 1 wall": frame 0 took 27993 us
+vkhang: "the game's world shader with one spotlight pass, a plain distance falloff, 1 wall": frame 1 took 27991 us
+vkhang: "the game's world shader with one spotlight pass, a plain distance falloff, 1 wall": frame 2 took 25992 us
+vkhang: "the game's world shader with one spotlight pass, a plain distance falloff, 1 wall": frame 3 took 25993 us
+vkhang: "the game's world shader with one spotlight pass, a plain distance falloff, 1 wall": frame 4 took 25993 us
+vkhang: "the game's world shader with one spotlight pass, a plain distance falloff, 1 wall": 60 frames, 26192 us a frame
+vkhang: "the game's world shader with one spotlight pass, a plain distance falloff, 1 wall": 120 frames, 26125 us a frame
+PASS: the game's world shader with one spotlight pass, a plain distance falloff, 1 wall
+vkhang: phase "the game's world shader with its spotlight loop unrolled, 1 wall"
+vkhang: "the game's world shader with its spotlight loop unrolled, 1 wall": frame 0 took 85976 us
+vkhang: "the game's world shader with its spotlight loop unrolled, 1 wall": frame 1 took 85977 us
+vkhang: "the game's world shader with its spotlight loop unrolled, 1 wall": frame 2 took 85977 us
+vkhang: "the game's world shader with its spotlight loop unrolled, 1 wall": frame 3 took 85976 us
+vkhang: "the game's world shader with its spotlight loop unrolled, 1 wall": frame 4 took 85978 us
+vkhang: "the game's world shader with its spotlight loop unrolled, 1 wall": 60 frames, 85976 us a frame
+vkhang: "the game's world shader with its spotlight loop unrolled, 1 wall": 120 frames, 85976 us a frame
+PASS: the game's world shader with its spotlight loop unrolled, 1 wall
+vkhang: every phase ran
+exit: status 0

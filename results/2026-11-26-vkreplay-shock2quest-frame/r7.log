@@ -1,0 +1,114 @@
+log: game:\vkreplay.log
+log: named after \Device\Harddisk0\Partition1\Games\Shock2\vkreplay.xex
+log: also over UDP to 192.168.1.53:7371
+vkreplay: shock2quest's dumped frame, drawn again
+PASS: vkreplay: draws.bin read
+display: 1280x720 scaled to the 1920x1080 output
+display: the line counter reached 720 after 21837 us
+display: Xbox 360 video output, 1280x720 at 59940 mHz
+vkreplay: frame 1280x720, formats 44/129, 1 samples
+PASS: vkreplay: draws.bin parsed
+vkreplay: 58 draws, 2 clears
+PASS: vkreplay: buffers, textures and sets made
+vkreplay: phase "draws=1-1 verts=87-95"
+vkreplay: "draws=1-1 verts=87-95": frame 0 took 1494 us
+vkreplay: "draws=1-1 verts=87-95": frame 1 took 1997 us
+vkreplay: "draws=1-1 verts=87-95": frame 2 took 2000 us
+vkreplay: "draws=1-1 verts=87-95": frame 3 took 2002 us
+vkreplay: "draws=1-1 verts=87-95": frame 4 took 2000 us
+vkreplay: "draws=1-1 verts=87-95": 60 frames, 1992 us a frame
+vkreplay: "draws=1-1 verts=87-95": 120 frames, 2000 us a frame
+vkreplay: "draws=1-1 verts=87-95": 180 frames, 2000 us a frame
+PASS: draws=1-1 verts=87-95
+vkreplay: phase "draws=1-1 verts=96-104"
+vkreplay: "draws=1-1 verts=96-104": frame 0 took 2000 us
+vkreplay: "draws=1-1 verts=96-104": frame 1 took 2000 us
+vkreplay: "draws=1-1 verts=96-104": frame 2 took 2000 us
+vkreplay: "draws=1-1 verts=96-104": frame 3 took 2000 us
+vkreplay: "draws=1-1 verts=96-104": frame 4 took 2001 us
+vkreplay: "draws=1-1 verts=96-104": 60 frames, 2000 us a frame
+vkreplay: "draws=1-1 verts=96-104": 120 frames, 2000 us a frame
+vkreplay: "draws=1-1 verts=96-104": 180 frames, 2000 us a frame
+PASS: draws=1-1 verts=96-104
+vkreplay: phase "draws=1-1 verts=105-113"
+vkreplay: "draws=1-1 verts=105-113": frame 0 took 2001 us
+vkreplay: "draws=1-1 verts=105-113": frame 1 took 1999 us
+vkreplay: "draws=1-1 verts=105-113": frame 2 took 2000 us
+vkreplay: "draws=1-1 verts=105-113": frame 3 took 2001 us
+vkreplay: "draws=1-1 verts=105-113": frame 4 took 1999 us
+vkreplay: "draws=1-1 verts=105-113": 60 frames, 2000 us a frame
+vkreplay: "draws=1-1 verts=105-113": 120 frames, 2000 us a frame
+vkreplay: "draws=1-1 verts=105-113": 180 frames, 2000 us a frame
+PASS: draws=1-1 verts=105-113
+vkreplay: phase "draws=1-1 verts=114-122"
+vkreplay: "draws=1-1 verts=114-122": frame 0 took 2000 us
+vkreplay: "draws=1-1 verts=114-122": frame 1 took 1999 us
+vkreplay: "draws=1-1 verts=114-122": frame 2 took 2002 us
+vkreplay: "draws=1-1 verts=114-122": frame 3 took 2000 us
+vkreplay: "draws=1-1 verts=114-122": frame 4 took 2000 us
+vkreplay: "draws=1-1 verts=114-122": 60 frames, 2001 us a frame
+vkreplay: "draws=1-1 verts=114-122": 120 frames, 2003 us a frame
+vkreplay: "draws=1-1 verts=114-122": 180 frames, 2000 us a frame
+PASS: draws=1-1 verts=114-122
+vkreplay: phase "draws=1-1 verts=123-131"
+vkreplay: "draws=1-1 verts=123-131": frame 0 took 1976 us
+vkreplay: "draws=1-1 verts=123-131": frame 1 took 1999 us
+vkreplay: "draws=1-1 verts=123-131": frame 2 took 1999 us
+vkreplay: "draws=1-1 verts=123-131": frame 3 took 2001 us
+vkreplay: "draws=1-1 verts=123-131": frame 4 took 2000 us
+vkreplay: "draws=1-1 verts=123-131": 60 frames, 1996 us a frame
+vkreplay: "draws=1-1 verts=123-131": 120 frames, 1997 us a frame
+vkreplay: "draws=1-1 verts=123-131": 180 frames, 2000 us a frame
+PASS: draws=1-1 verts=123-131
+vkreplay: phase "draws=1-1 verts=132-140"
+vkreplay: "draws=1-1 verts=132-140": frame 0 took 2000 us
+vkreplay: "draws=1-1 verts=132-140": frame 1 took 2000 us
+vkreplay: "draws=1-1 verts=132-140": frame 2 took 2001 us
+vkreplay: "draws=1-1 verts=132-140": frame 3 took 1999 us
+vkreplay: "draws=1-1 verts=132-140": frame 4 took 2000 us
+vkreplay: "draws=1-1 verts=132-140": 60 frames, 2000 us a frame
+vkreplay: "draws=1-1 verts=132-140": 120 frames, 2000 us a frame
+vkreplay: "draws=1-1 verts=132-140": 180 frames, 2000 us a frame
+PASS: draws=1-1 verts=132-140
+vkreplay: phase "draws=1-1 verts=141-149"
+vkreplay: "draws=1-1 verts=141-149": frame 0 took 2000 us
+vkreplay: "draws=1-1 verts=141-149": frame 1 took 1998 us
+vkreplay: "draws=1-1 verts=141-149": frame 2 took 2000 us
+vkreplay: "draws=1-1 verts=141-149": frame 3 took 1999 us
+vkreplay: "draws=1-1 verts=141-149": frame 4 took 2000 us
+vkreplay: "draws=1-1 verts=141-149": 60 frames, 2000 us a frame
+vkreplay: "draws=1-1 verts=141-149": 120 frames, 2000 us a frame
+vkreplay: "draws=1-1 verts=141-149": 180 frames, 2000 us a frame
+PASS: draws=1-1 verts=141-149
+vkreplay: phase "draws=1-1 verts=150-158"
+vkreplay: "draws=1-1 verts=150-158": frame 0 took 2000 us
+vkreplay: "draws=1-1 verts=150-158": frame 1 took 1999 us
+vkreplay: "draws=1-1 verts=150-158": frame 2 took 2001 us
+vkreplay: "draws=1-1 verts=150-158": frame 3 took 2000 us
+vkreplay: "draws=1-1 verts=150-158": frame 4 took 2001 us
+vkreplay: "draws=1-1 verts=150-158": 60 frames, 2000 us a frame
+vkreplay: "draws=1-1 verts=150-158": 120 frames, 2000 us a frame
+vkreplay: "draws=1-1 verts=150-158": 180 frames, 2000 us a frame
+PASS: draws=1-1 verts=150-158
+vkreplay: phase "draws=1-1 verts=159-167"
+vkreplay: "draws=1-1 verts=159-167": frame 0 took 2000 us
+vkreplay: "draws=1-1 verts=159-167": frame 1 took 2000 us
+vkreplay: "draws=1-1 verts=159-167": frame 2 took 2000 us
+vkreplay: "draws=1-1 verts=159-167": frame 3 took 2001 us
+vkreplay: "draws=1-1 verts=159-167": frame 4 took 2000 us
+vkreplay: "draws=1-1 verts=159-167": 60 frames, 2000 us a frame
+vkreplay: "draws=1-1 verts=159-167": 120 frames, 2000 us a frame
+vkreplay: "draws=1-1 verts=159-167": 180 frames, 2003 us a frame
+PASS: draws=1-1 verts=159-167
+vkreplay: phase "draws=1-1 verts=168-176"
+vkreplay: "draws=1-1 verts=168-176": frame 0 took 1999 us
+vkreplay: "draws=1-1 verts=168-176": frame 1 took 2000 us
+vkreplay: "draws=1-1 verts=168-176": frame 2 took 2001 us
+vkreplay: "draws=1-1 verts=168-176": frame 3 took 2000 us
+vkreplay: "draws=1-1 verts=168-176": frame 4 took 2001 us
+vkreplay: "draws=1-1 verts=168-176": 60 frames, 2003 us a frame
+vkreplay: "draws=1-1 verts=168-176": 120 frames, 1998 us a frame
+vkreplay: "draws=1-1 verts=168-176": 180 frames, 1996 us a frame
+PASS: draws=1-1 verts=168-176
+vkreplay: every phase ran
+exit: status 0
