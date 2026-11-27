@@ -178,13 +178,11 @@ static void upload_texels(Image *image, const LevelCopy *copy, uint32_t slice)
 			&image->texture, copy->level, layer, copy->y, copy->height, from, copy->row_bytes);
 		return;
 	}
-	const uint32_t texel_bytes = v4x_texel_bytes(image->format);
+	// Only the region's texels, at their tiled places: reading back and rewriting its rows whole cost a 4096-wide
+	// lightmap atlas (shock2quest) 18 ms a small region.
 	v4x_profile_count(V4X_PROFILE_PARTIAL_ROWS, copy->height);
-	for (uint32_t y = 0; y < copy->height; y++) {
-		xsdk_texture_download_slice_rows(&image->texture, copy->level, layer, copy->y + y, 1, rows[ROW_OUT], 0);
-		memcpy(rows[ROW_OUT] + copy->x * texel_bytes, from + y * copy->row_bytes, copy->width * texel_bytes);
-		xsdk_texture_upload_slice_rows(&image->texture, copy->level, layer, copy->y + y, 1, rows[ROW_OUT], 0);
-	}
+	xsdk_texture_upload_slice_rect(
+		&image->texture, copy->level, layer, copy->x, copy->width, copy->y, copy->height, from, copy->row_bytes);
 }
 
 // Where to keep a whole level of one layer or slice that the CPU writes, rows row_bytes long, in buffer: if the next
